@@ -1,17 +1,10 @@
-# SubApplication
-
-### A javascript library for building simple web applications
-
-The library is only **58 lines** of code, inspired by Cell.js & React.js. There are only subapplications in the paradigm and connect them only with event bus. There is no VDOM, but takes lifecycles & singly existing components.
-
-When ```mount``` is called, it start selecting real DOM and save for later use, It will cause ```CPU saving```. Then I build ```definedDOM Type```. Since js is not static, you will see disadvantage of lacking ```type safety```. Then I ```attach events``` during build real dom. 
-
-When a property is updated, real dom is rebuilt if the value are not same as previouse data value. 
-
-
-Don't take serious, I made this for learning purpose.
-Here is some sample code. Have some fun.
-```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubApplication</title>
+</head>
 <body>
     <div id="button"></div>
 
@@ -44,4 +37,4 @@ Here is some sample code. Have some fun.
         SubApplication.mount("#button",new Button());
     </script>
 </body>
-```
+</html>
